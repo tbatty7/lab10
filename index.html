@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular Demo from Tim Batty</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<h1>Angular demo</h1>
+<div ng-app="">
+	<div ng-init="HiJinks=['Sally', 'Robo', 'Willy', 'Wiggles']">
+	<h1>Names of my Band</h1>
+	<!-- <input type="text" ng-model="noun" placeholder="noun" name=""> -->
+		<p ng-repeat="dude in HiJinks | orderBy:dude">{{dude | uppercase}}</p>
+	</div>
+	
+</div>
+</body>
+</html>
